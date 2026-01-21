@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IG Reels Helper Settings</title>
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>IG Reels Helper</h1>
+      <p class="subtitle">Customize controls for Reels and Direct videos.</p>
+      <form id="settings-form">
+        <section>
+          <h2>Playback</h2>
+          <label>
+            Default volume
+            <input id="volume" type="number" min="0" max="100" />
+          </label>
+          <label>
+            Seek step (seconds)
+            <input id="seekStep" type="number" min="1" max="30" />
+          </label>
+        </section>
+
+        <section>
+          <h2>Behavior</h2>
+          <label class="toggle">
+            <input id="applyToAllVideos" type="checkbox" />
+            Apply settings to all videos
+          </label>
+          <label class="toggle">
+            <input id="singleActiveVideo" type="checkbox" />
+            Single active video only
+          </label>
+          <label class="toggle">
+            <input id="lagReductionMode" type="checkbox" />
+            Lag reduction mode
+          </label>
+          <label class="toggle">
+            <input id="disableHoverAutoplay" type="checkbox" />
+            Disable hover autoplay
+          </label>
+          <label class="toggle">
+            <input id="enableWheelSeek" type="checkbox" />
+            Enable wheel seek on hover
+          </label>
+          <label class="toggle">
+            <input id="enableDirectNav" type="checkbox" />
+            Enable Direct next/prev
+          </label>
+        </section>
+
+        <section>
+          <h2>Diagnostics</h2>
+          <label class="toggle">
+            <input id="debugMode" type="checkbox" />
+            Debug mode
+          </label>
+        </section>
+
+        <button type="submit">Save settings</button>
+        <p id="status" role="status" aria-live="polite"></p>
+      </form>
+    </main>
+    <script type="module" src="./options.ts"></script>
+  </body>
+</html>

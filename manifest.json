@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "IG Reels Helper",
+  "version": "1.0.0",
+  "description": "Better controls for Instagram Reels and Direct videos.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://www.instagram.com/*"],
+  "background": {
+    "service_worker": "dist/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.instagram.com/*"],
+      "js": ["dist/content/index.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "dist/options/options.html"
+}
