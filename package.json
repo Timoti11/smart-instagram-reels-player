@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp manifest.json dist/ && cp -R assets dist/",
+    "build": "vite build && cp manifest.dist.json dist/manifest.json && cp -R assets dist/",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

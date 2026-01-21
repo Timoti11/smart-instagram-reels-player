@@ -17,6 +17,7 @@ npm install
 npm run build
 ```
 
+
 Build output is in `dist/` and includes the copied `manifest.json` and `assets/` icons.
 
 > Note: The repository does not include PNG icons. Add your own `assets/icon16.png`, `assets/icon48.png`, and `assets/icon128.png` if you want custom extension icons.
@@ -26,10 +27,11 @@ Build output is in `dist/` and includes the copied `manifest.json` and `assets/`
 1. Open `chrome://extensions`.
 2. Enable **Developer mode**.
 3. Click **Load unpacked**.
-4. Select the `dist/` folder (do **not** select the repo root).
+4. Select the `dist/` folder (recommended).
+
+Alternatively, if you already built the project, you can load the repo root because `manifest.json` points at the compiled files under `dist/`.
 
 If Chrome shows `Could not load javascript 'content/index.js'` or similar, run `npm run build` and load the `dist/` folder again.
-
 
 ## Verify
 
