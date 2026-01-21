@@ -26,7 +26,10 @@ Build output is in `dist/` and includes the copied `manifest.json` and `assets/`
 1. Open `chrome://extensions`.
 2. Enable **Developer mode**.
 3. Click **Load unpacked**.
-4. Select the `dist/` folder.
+4. Select the `dist/` folder (do **not** select the repo root).
+
+If Chrome shows `Could not load javascript 'content/index.js'` or similar, run `npm run build` and load the `dist/` folder again.
+
 
 ## Verify
 
