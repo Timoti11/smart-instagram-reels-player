@@ -17,8 +17,8 @@ npm install
 npm run build
 ```
 
-
-Build output is in `dist/` and includes the copied `manifest.json` and `assets/` icons.
+Build output is in `dist/` and includes the copied `manifest.dist.json` (as `manifest.json`) and `assets/` icons.
+The repository includes an empty `dist/` folder placeholder; it will be populated after running the build.
 
 > Note: The repository does not include PNG icons. Add your own `assets/icon16.png`, `assets/icon48.png`, and `assets/icon128.png` if you want custom extension icons.
 
