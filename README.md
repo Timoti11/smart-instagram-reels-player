@@ -30,6 +30,7 @@ Build output is in `dist/` and includes the copied `manifest.json` and `assets/`
 
 If Chrome shows `Could not load javascript 'content/index.js'` or similar, run `npm run build` and load the `dist/` folder again.
 
+
 ## Verify
 
 1. Open `https://www.instagram.com/` and start any Reel.
