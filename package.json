@@ -1,0 +1,16 @@
+{
+  "name": "ig-reels-helper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && cp manifest.json dist/ && cp -R assets dist/",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12"
+  }
+}
